@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img-logo{
+    width: 100px;
+}
+
+ul{
+    list-style: none;
+    font-size: 15px;
+}
+
+header{
+    background-color: #FFFAF6;
+}
+
+footer{
+    background-color: #FFFAF6;
+}
+
+
+.titulo__inicio{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.header__listaMenu a{
+    color: black;
+    text-decoration: none;
+}
+
+.header__listaMenu li{
+    display: inline-block;
+    padding: 2px;
+
+}
+
+.header__listaMenu--activo{
+    font-weight: bold;
+    color: #BF639F;
+}
+
+.texto__principal{
+    padding: 20px 25px;
+    margin: 55px;
+}
+
+.texto__info{
+    padding: 20px 25px;
+}
+
+.whatsapp{
+    position: sticky;    
+    left: 70rem;
+    width: 80px;
+}
+
+.imagen__producto{
+    width: 300px;
+}
+
+.footer__listaMenu a{
+    color: #BF639F;
+    text-decoration: none; 
+}
+
+.receta{
+    padding: 20px 25px;
+}
+
+.receta--titulo{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 2px;
+}
+
+.receta--ingrediente{
+    font-weight: bold;
+}
+
+.receta--opcional{
+    font-style:italic ;
+}
+
+.tips_titulo{
+    padding: 20px 25px;
+}
