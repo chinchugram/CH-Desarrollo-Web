@@ -1,10 +1,41 @@
 *{
     margin: 0;
     padding: 0;
+<<<<<<< Updated upstream
+=======
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+
+/* Header */
+.header-flex {
+    background-color: #FFFAF6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+
+}
+
+.header-flex a{
+    color: #2D1E2F;
+}
+
+.header-flex ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+}
+
+.header-flex li{
+    margin: 0.5rem;
+>>>>>>> Stashed changes
 }
 
 .img-logo{
     width: 100px;
+<<<<<<< Updated upstream
+=======
 }
 
 ul{
@@ -12,18 +43,57 @@ ul{
     font-size: 15px;
 }
 
-header{
-    background-color: #FFFAF6;
+/*Contenido Principal*/
+
+.banner-hero{
+    background-size: cover;
+    background-color: #e5e5e5;
 }
 
-footer{
+.banner-hero h1{
+    text-align: center;
+
+}
+
+/* Footer */
+.footer-flex{
+    text-align: center;
     background-color: #FFFAF6;
+>>>>>>> Stashed changes
+}
+
+.footer-flex ul{
+    padding: 1rem;
+    color: #BF639F;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+}
+
+ /* Logo de Whatsapp */
+ .whatsapp{
+    position: fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    border-radius:50px;
+    z-index:100;
+}
+.whatsapp img{
+    width: 80px;
 }
 
 
+/* Inicio*/
 .titulo__inicio{
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .header__listaMenu a{
@@ -45,45 +115,152 @@ footer{
 .texto__principal{
     padding: 20px 25px;
     margin: 55px;
+    text-align: center;
 }
 
 .texto__info{
     padding: 20px 25px;
+    padding-bottom: 280px;
 }
 
-.whatsapp{
-    position: sticky;    
-    left: 70rem;
-    width: 80px;
+/* Galeria */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
-.imagen__producto{
-    width: 300px;
+.producto{
+    width: 50vw;
+    text-align: center;
+}
+.producto img{
+    width: 40vw;    
+    transition: all 1s;
 }
 
-.footer__listaMenu a{
-    color: #BF639F;
-    text-decoration: none; 
+.producto img:hover{
+    width: 47vw;
+    padding: 5px;
+    background-color: aliceblue;
 }
 
+
+/* Página de Recetas */
 .receta{
-    padding: 20px 25px;
+    text-align: center;
+    padding: 1rem;
+}
+.receta img{
+    width: 40vw;
+    transition: all 1s;
 }
 
-.receta--titulo{
-    font-weight: bold;
-    font-size: 22px;
-    padding-bottom: 2px;
+.receta img:hover{
+    width: 60vw;
+    padding: 10px;
+    background-color: aliceblue;
 }
 
-.receta--ingrediente{
-    font-weight: bold;
+.recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.receta--opcional{
-    font-style:italic ;
-}
 
+
+/* Pantalla Tips */
 .tips_titulo{
-    padding: 20px 25px;
+    padding: 40px 15px;
+}
+
+.tips_titulo h2{
+    padding-bottom: 33rem;
+}
+
+
+@media (min-width: 768px){
+    /* Header */
+    .header-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 1rem;
+    }
+
+    /* Footer */
+    .footer-flex ul{
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        
+    }
+
+    .footer-flex li{
+        color: #BF639F;
+        text-decoration: none;         
+    }
+
+    /* Galeria de productos */
+    .producto{
+        width: 30vw;
+        text-align: center;
+    }    
+    .producto img{
+        width: 30vw;
+        transition: all 1s;   
+    }
+
+    .producto img:hover{
+        width: 33vw;
+        padding: 5px;
+        background-color: aliceblue;
+    }
+
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    /* Recetas */
+    .recetas-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        padding-top: 1rem;
+        padding-bottom: 7rem;
+    }
+
+    .receta img{
+        width: 25vw;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .producto{
+        width: 33vw;
+        text-align: center;
+    }    
+    .producto img{
+        width: 15vw;
+        transition: all 1s;   
+    }
+
+    .producto img:hover{
+        width: 25vw;
+        padding: 1rem;
+        background-color: aliceblue;
+    }
+
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
 }
