@@ -1,0 +1,290 @@
+//Colores
+$color_1: #2d1e2f;
+$color_2: #bf639f;
+$color_3: black;
+$font-family_1: "Roboto";
+$background-color_1: #fffaf6;
+$background-color_2: #e5e5e5;
+$background-color_3: aliceblue;
+//font-family: 'Roboto', sans-serif;
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family_1;
+  box-sizing: border-box;
+}
+// Header
+.header-flex {
+  background-color: $background-color_1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  a {
+    color: $color_1;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+  }
+  li {
+    margin: 0.5rem;
+  }
+}
+.img-logo {
+  width: 100px;
+}
+ul {
+  list-style: none;
+  font-size: 15px;
+}
+//Contenido Principal
+.banner-hero {
+  background-size: cover;
+  background-color: $background-color_2;
+  h1 {
+    text-align: center;
+  }
+}
+//Footer
+.footer-flex {
+  text-align: center;
+  background-color: $background-color_1;
+  margin-top: 8rem;
+  ul {
+    padding: 1rem;
+    color: $color_2;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+//Logo de Whatsapp
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  z-index: 100;
+  img {
+    width: 80px;
+  }
+}
+//Pagina de Inicio
+.titulo__inicio {
+  font-weight: bold;
+  margin-top: 25px;
+  text-align: center;
+}
+.header__listaMenu {
+  a {
+    color: $color_3;
+    text-decoration: none;
+  }
+  li {
+    display: inline-block;
+    padding: 2px;
+  }
+}
+.header__listaMenu--activo {
+  font-weight: bold;
+  color: $color_2;
+}
+.texto__principal {
+  padding: 20px 25px;
+  margin: 55px;
+  text-align: center;
+}
+.texto__info {
+  padding: 20px 25px;
+  padding-bottom: 280px;
+}
+//Pagina de Galeria
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.producto {
+  width: 50vw;
+  text-align: center;
+  img {
+    width: 40vw;
+    transition: all 1s;
+    &:hover {
+      width: 47vw;
+      padding: 5px;
+      background-color: $background-color_3;
+    }
+  }
+}
+.recetas-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.receta {
+  text-align: center;
+  padding: 1rem;
+  img {
+    width: 40vw;
+    transition: all 1s;
+    &:hover {
+      width: 60vw;
+      padding: 10px;
+      background-color: $background-color_3;
+    }
+  }
+}
+//Pantalla FAQ
+.FAQ {
+  padding-bottom: 3rem;
+}
+
+.accordion {
+  max-width: 95vw;
+  margin: auto;
+  padding: 4.5rem;
+}
+//Pantalla unirse
+.unirse {
+  text-align: center;
+  padding-bottom: 17rem;
+  img {
+    display: center;
+    max-width: 0vw;
+  }
+  h4 {
+    padding-top: 5rem;
+    text-align: center;
+  }
+}
+//Responsive para tamaño a partir de 768px
+@media (min-width: 768px) {
+  .header-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  .footer-flex {
+    ul {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+    li {
+      color: $color_2;
+      text-decoration: none;
+    }
+  }
+  .producto {
+    width: 30vw;
+    text-align: center;
+    img {
+      width: 30vw;
+      transition: all 1s;
+      &:hover {
+        width: 33vw;
+        padding: 5px;
+        background-color: $background-color_3;
+      }
+    }
+  }
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+  }
+  .receta {
+    img {
+      width: 20vw;
+      &:hover {
+        width: 26vw;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .FAQ {
+    padding-bottom: 9rem;
+  }
+  .unirse {
+    padding-bottom: 0rem;
+    img {
+      max-width: 50vw;
+      margin-top: 5rem;
+    }
+    h4 {
+      display: none;
+    }
+  }
+}
+//Responsive para tamaño a partir de 1024px
+@media (min-width: 1024px) {
+  .header-flex {
+    ul {
+      font-size: 20px;
+    }
+  }
+  .img-logo {
+    width: 120px;
+  }
+  .producto {
+    width: 33vw;
+    text-align: center;
+    img {
+      width: 15vw;
+      transition: all 1s;
+      &:hover {
+        width: 25vw;
+        padding: 1rem;
+        background-color: $background-color_3;
+      }
+    }
+  }
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .receta {
+    img {
+      width: 18vw;
+      &:hover {
+        width: 26vw;
+        padding: 1rem;
+      }
+    }
+  }
+  .accordion {
+    max-width: 60vw;
+  }
+  .FAQ {
+    padding-bottom: 12rem;
+  }
+  .unirse {
+    padding-bottom: 0rem;
+    font-size: 30px;
+    img {
+      max-width: 50vw;
+      margin-top: 5rem;
+    }
+    h4 {
+      display: none;
+    }
+  }
+}
