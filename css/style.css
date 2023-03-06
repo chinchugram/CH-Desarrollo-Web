@@ -1,4 +1,17 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap";
+/*font-family: 'Roboto', sans-serif;*/
+/* Pantalla Tips */
+/* Pantalla unirse */
+/*Responsive para tamaño a partir de 768px */
+/* Header */
+/* Footer */
+/* Pagina de Galeria */
+/* Pagina de Recetas */
+/* Responsive para tamaño a partir de 1024px */
+/* Header */
+/* Pagina de Galeria */
+/* Pagina de Receta */
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +19,15 @@
   box-sizing: border-box;
 }
 
+/* Header */
 .header-flex {
-  background-color: #fffaf6;
+  background-color: #FFFAF6;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .header-flex a {
-  color: #2d1e2f;
+  color: #2D1E2F;
 }
 .header-flex ul {
   display: flex;
@@ -33,6 +47,7 @@ ul {
   font-size: 15px;
 }
 
+/*Contenido Principal*/
 .banner-hero {
   background-size: cover;
   background-color: #e5e5e5;
@@ -41,14 +56,15 @@ ul {
   text-align: center;
 }
 
+/* Footer */
 .footer-flex {
   text-align: center;
-  background-color: #fffaf6;
+  background-color: #FFFAF6;
   margin-top: 8rem;
 }
 .footer-flex ul {
   padding: 1rem;
-  color: #bf639f;
+  color: #BF639F;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -56,6 +72,7 @@ ul {
   align-items: flex-start;
 }
 
+/* Logo de Whatsapp */
 .whatsapp {
   position: fixed;
   width: 60px;
@@ -69,6 +86,7 @@ ul {
   width: 80px;
 }
 
+/* Pagina de Inicio */
 .titulo__inicio {
   font-weight: bold;
   margin-top: 25px;
@@ -86,7 +104,7 @@ ul {
 
 .header__listaMenu--activo {
   font-weight: bold;
-  color: #bf639f;
+  color: #BF639F;
 }
 
 .texto__principal {
@@ -100,6 +118,7 @@ ul {
   padding-bottom: 280px;
 }
 
+/* Pagina de Galeria */
 .productos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -141,27 +160,23 @@ ul {
   background-color: aliceblue;
 }
 
-.FAQ {
-  padding-bottom: 3rem;
+.tips_titulo {
+  padding: 40px 15px;
+}
+.tips_titulo h2 {
+  padding-bottom: 33rem;
+}
+
+.unirse {
+  text-align: justify;
+  padding: 0, 5rem, 10rem;
 }
 
 .accordion {
   max-width: 95vw;
-  margin: auto;
-  padding: 4.5rem;
-}
-
-.unirse {
-  text-align: center;
-  padding-bottom: 17rem;
-}
-.unirse img {
-  display: center;
-  max-width: 0vw;
-}
-.unirse h4 {
-  padding-top: 5rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -172,14 +187,14 @@ ul {
     padding: 1rem;
   }
   .footer-flex ul {
-    padding-top: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
   }
   .footer-flex li {
-    color: #bf639f;
+    color: #BF639F;
     text-decoration: none;
   }
   .producto {
@@ -213,19 +228,6 @@ ul {
     width: 26vw;
     padding: 1rem;
   }
-  .FAQ {
-    padding-bottom: 9rem;
-  }
-  .unirse {
-    padding-bottom: 0rem;
-  }
-  .unirse img {
-    max-width: 50vw;
-    margin-top: 5rem;
-  }
-  .unirse h4 {
-    display: none;
-  }
 }
 @media (min-width: 1024px) {
   .header-flex ul {
@@ -257,22 +259,5 @@ ul {
   .receta img:hover {
     width: 26vw;
     padding: 1rem;
-  }
-  .accordion {
-    max-width: 60vw;
-  }
-  .FAQ {
-    padding-bottom: 12rem;
-  }
-  .unirse {
-    padding-bottom: 0rem;
-    font-size: 30px;
-  }
-  .unirse img {
-    max-width: 50vw;
-    margin-top: 5rem;
-  }
-  .unirse h4 {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
